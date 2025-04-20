@@ -52,31 +52,34 @@ Then you can start the conversation.
 Try to ask some questions like:
 
 
-```bash
-Who are you?
-what is an RPG game?
-who was the first king of the northern isles?
-```
+
+> Who are you?
+> what is an RPG game?
+> who was the first king of the northern isles?
+
+---
 
 ## Sample Transcript
 
 See sample_dialogue.json.
 
-
+---
 
 ## Files
 
-mcp_server.py: TCP/HTTP server with memory, summarization, and tool-call support
+*mcp_server.py*: TCP/HTTP server with memory, summarization, and tool-call support
 
-mcp_client.py: LangGraph dialogue flow, Gemini LLM integration
+*mcp_client.py*: LangGraph dialogue flow, Gemini LLM integration
 
-offline_memory_job.py: Periodical task. Re-score, rank and trim memory using Gemini for better long-term quality.
+*offline_memory_job.py*: Periodical task. Re-score, rank and trim memory using Gemini for better long-term quality.
 
-persona_config.json: Stores per-character system prompts for easy customization and extension.
+*persona_config.json*: Stores per-character system prompts for easy customization and extension.
 
-sample_dialogue.json: Example dialogue
+*sample_dialogue.json*: Example dialogue
 
-README.md
+*README.md*
+
+---
 
 ## System Design Overview
 
@@ -112,3 +115,42 @@ It balances response time and memory quality under real constraints.
 - Users select NPC at runtime
 
 - New characters can be added via JSON config without changing code
+
+---
+
+## Design Trade-offs
+
+This section describes key trade-offs considered during development.
+Each decision aims to balance speed, quality, simplicity, and extensibility.
+
+### 1. Online vs. offline memory scoring
+Online scoring uses keywords for latency performance.
+Offline jobs use Gemini to update the score and improve accuracy.
+This allows the system to stay responsive in real-time, while improving memory quality over time.
+
+### 2. Token limit vs. keep history
+To avoid model truncation, context is trimmed to a token budget. And all memory are ranked by score.
+The design keeps important content while staying under token limitation.
+
+### 3. Cold start handling
+When a new character has no memory file, the system creates it automatically.
+This prevents crashes and makes the first-time experience smooth.
+
+## Future Plans
+With more compute and real data, several improvements can be made in the future:
+
+### 1. User-defined characters
+Users can create new characters by writing a name and a short description.
+The system will generate a persona and manage its memory automatically.
+This supports open-ended, scalable role creation.
+
+### 2. Embedding-based memory
+Instead of using text to store memory, memory also can be encoded as embeddings.
+This allows more precise similarity-based filtering and summarization.
+It also enables character memory search and long-term personalization.
+
+### 3. Dynamic tool selection
+Instead of using keyword, we can use a light model to check if it need to use tools.
+
+### 4. Safety model for content moderation
+A safety model is a must for a online dialogue product. It will detect harmful, biased, or inappropriate content before the model responds.
