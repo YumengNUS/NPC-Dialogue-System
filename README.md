@@ -13,7 +13,7 @@ Built using LangGraph, a custom memory server (MCP), and Google Gemini API.
 -  **Offline memory optimization and summarization**
 -  Cold-start handling for first-time interactions
 -  LangGraph 
--  Gemini integration (While the code that can call chatgpt is also retained)
+-  Gemini-1.5-pro integration (While the code that can call chatgpt is also retained)
 
 ---
 
@@ -119,7 +119,7 @@ It balances response time and memory quality under real constraints.
 
 - Built with LangGraph to manage dialogue flow as a state machine
 
-- Steps: input → context fetch → optional tool → prompt → Gemini call → output + memory update
+- Steps: **input → context fetch → optional tool → prompt → Gemini call → output + memory update**
 
 - Easy to modify flow or add new modules without affecting others
 
@@ -127,9 +127,9 @@ It balances response time and memory quality under real constraints.
 
 - Each NPC has isolated memory and persona
 
-- Users select NPC at runtime
+- Users can select NPC 
 
-- New characters can be added via JSON config without changing code
+- New characters can be added via *persona_config.json* without changing code
 
 ---
 
@@ -151,6 +151,9 @@ The design keeps important content while staying under token limitation.
 When a new character has no memory file, the system creates it automatically.
 This prevents crashes and makes the first-time experience smooth.
 
+### 4. Gemini vs. ChatGPT
+Gemini was selected because it offers a free quota for API usage.
+
 ## Future Plans
 With more compute and real data, several improvements can be made in the future:
 
@@ -164,8 +167,12 @@ Instead of using text to store memory, memory also can be encoded as embeddings.
 This allows more precise similarity-based filtering and summarization.
 It also enables character memory search and long-term personalization.
 
-### 3. Dynamic tool selection
+### 3. LLM evaluation
+Currently the system is using Gemini. Different models (e.g., Chatgpt, Gemini, open-source models) can be tested to compare quality, speed, and style.
+Also, with domain-specific data a fine-tuned model can further improve consistency and personalization.
+
+### 4. Dynamic tool selection
 Instead of using keyword, we can use a light model to check if it need to use tools.
 
-### 4. Safety model for content moderation
+### 5. Safety model for content moderation
 A safety model is a must for a online dialogue product. It will detect harmful, biased, or inappropriate content before the model responds.
