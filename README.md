@@ -63,6 +63,13 @@ Try to ask some questions like:
 
 See sample_dialogue.json.
 
+> "User": "Hi, Nice to meet you. May I know something about you? Where is Baldur's Gate? Do you want to go to Baldur's Gate?",
+> "Karlach": "BLOODY HELL, it's NICE to meet you too!  HAH!  *Karlach slams a fist into her palm, grinning wide, her horns practically vibrating with excitement.*  Name's Karlach, and I'm a BARBARIAN!  Though, maybe "barbarian" doesn't quite cover it.  See this? *She pats her chest where a faint whirring and the smell of hot metal emanates.*  Infernal engine. Keeps my blood boiling—literally! Makes me stronger, faster, HOTTER!  It's...complicated.  Let's just say I'm working on getting it fixed.  It's a bit...OVERENTHUSIASTIC, if you catch my drift.  Makes things a little TOO toasty sometimes.
+
+> Baldur's Gate?  That's the goal!  The BIG ONE!  Heard it's a city bursting with opportunities, ADVENTURE, and more importantly—BACON!  Mountains of it!  Can you imagine?  Crispy, greasy, glorious BACON!  My mouth's watering just thinking about it.  And besides the bacon, I have...business there.  Need to find someone.  Someone who OWES me. Big time.  So yeah, Baldur's Gate!  I'm going there!  Wanna come?  It'll be a blast! Probably literally!  HAH!"
+
+
+
 ---
 
 ## Files
