@@ -63,9 +63,17 @@ Try to ask some questions like:
 
 See sample_dialogue.json.
 
-> "User": "Hi, Nice to meet you. May I know something about you? Where is Baldur's Gate? Do you want to go to Baldur's Gate?",
-> "Karlach": "BLOODY HELL, it's NICE to meet you too!  HAH!  *Karlach slams a fist into her palm, grinning wide, her horns practically vibrating with excitement.*  Name's Karlach, and I'm a BARBARIAN!  Though, maybe "barbarian" doesn't quite cover it.  See this? *She pats her chest where a faint whirring and the smell of hot metal emanates.*  Infernal engine. Keeps my blood boiling—literally! Makes me stronger, faster, HOTTER!  It's...complicated.  Let's just say I'm working on getting it fixed.  It's a bit...OVERENTHUSIASTIC, if you catch my drift.  Makes things a little TOO toasty sometimes.
 
+> **"User"**: "Who are you? Where are we? What is RPG game?"
+> 
+> **"Adam"**: "Ah, a traveler on the winds of curiosity, I see. I am Adam, they call me, though names hold less meaning than the stories they carry. I dwell amongst the whispering stones and the watchful ravens of the Northern Isles, a place where the veil between worlds is thin and the echoes of the past linger like sea mist.  I listen to the wind and the waves, and they whisper tales of forgotten ages, of heroes and heartbreaks, of magic and loss. I gather these fragments, hoping to mend the tapestry of time and share its wisdom with those who seek it.\n\nNow, where are we? We are, in a sense, nowhere and everywhere. This space between us, this realm of words and thought, exists beyond the confines of the physical world. It is a place where imagination takes flight, where stories can be woven and shared. Think of it as a campfire on a starless night, where the embers of our minds kindle tales that dance in the darkness.\n\n\nYou ask of \"RPG games.\"  Ah, yes, games of role-playing. Imagine, if you will, stepping out of your own skin and into another. You might be a valiant knight, a cunning rogue, a wise mage, or perhaps a humble farmer caught in extraordinary circumstances.  In these games, you craft a character, imbue them with life through your choices, and embark on adventures, facing trials and tribulations, forging alliances and facing down foes. It's a form of storytelling, shared and shaped by all who partake.  You explore worlds brimming with fantastical creatures, ancient ruins, and hidden magic.  You unravel mysteries, solve puzzles, and engage in battles of wit and strength.  Ultimately, it's a journey of self-discovery, both for the character you inhabit and for the player who guides their fate."
+
+
+
+
+> **"User"**: "Hi, Nice to meet you. May I know something about you? Where is Baldur's Gate? Do you want to go to Baldur's Gate?"
+> 
+> **"Karlach"**: "BLOODY HELL, it's NICE to meet you too!  HAH!  *Karlach slams a fist into her palm, grinning wide, her horns practically vibrating with excitement.*  Name's Karlach, and I'm a BARBARIAN!  Though, maybe "barbarian" doesn't quite cover it.  See this? *She pats her chest where a faint whirring and the smell of hot metal emanates.*  Infernal engine. Keeps my blood boiling—literally! Makes me stronger, faster, HOTTER!  It's...complicated.  Let's just say I'm working on getting it fixed.  It's a bit...OVERENTHUSIASTIC, if you catch my drift.  Makes things a little TOO toasty sometimes.
 > Baldur's Gate?  That's the goal!  The BIG ONE!  Heard it's a city bursting with opportunities, ADVENTURE, and more importantly—BACON!  Mountains of it!  Can you imagine?  Crispy, greasy, glorious BACON!  My mouth's watering just thinking about it.  And besides the bacon, I have...business there.  Need to find someone.  Someone who OWES me. Big time.  So yeah, Baldur's Gate!  I'm going there!  Wanna come?  It'll be a blast! Probably literally!  HAH!"
 
 
